@@ -17,4 +17,5 @@ echo "\n"
 
 brew install watchman
 sudo gem install cocoapods
-brew cask install adoptopenjdk/openjdk/adoptopenjdk8
+brew tap AdoptOpenJDK/openjdk
+brew cask install adoptopenjdk8
