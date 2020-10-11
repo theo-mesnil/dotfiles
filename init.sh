@@ -5,7 +5,7 @@ echo "#############################"
 echo "\n"
 
 ## Install xcode
-xcode-select --instal
+xcode-select --install
 
 ## Install brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
