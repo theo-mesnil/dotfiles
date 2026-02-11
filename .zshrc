@@ -1,30 +1,26 @@
-#GLOBAL
-
-export EDITOR=code
-
-export ZSH="/Users/mesniltheo/.oh-my-zsh"
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 source $HOME/.aliases
 
-# ZSH
+export ZSH="$HOME/.oh-my-zsh"
 
-HIST_STAMPS="mm/dd/yyyy"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
-plugins=(git node npm yarn tmux zsh-syntax-highlighting zsh-autosuggestions)
-
-ZSH_THEME="spaceship"
-SPACESHIP_PACKAGE_SHOW="false"
-SPACESHIP_PROMPT_PREFIXES_SHOW="false"
-SPACESHIP_NODE_SHOW="false"
-SPACESHIP_RUBY_SHOW="false"
-SPACESHIP_ELIXIR_SHOW="false"
+plugins=(git node npm zsh-completions zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
-
-. /usr/local/opt/asdf/asdf.sh
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home

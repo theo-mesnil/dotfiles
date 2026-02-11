@@ -5,17 +5,4 @@ echo "#############################"
 echo "\n"
 
 brew install yarn
-brew install asdf
-brew install nginx
-brew install redis
-
-echo "\n"
-echo "#############################"
-echo "# Installing various programs from react native"
-echo "#############################"
-echo "\n"
-
-brew install watchman
-sudo gem install cocoapods
-brew tap AdoptOpenJDK/openjdk
-brew cask install adoptopenjdk8
+brew install nvm

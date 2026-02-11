@@ -1,29 +1,74 @@
 {
-  "workbench.colorTheme": "Atom One Dark",
-  "workbench.iconTheme": "material-icon-theme",
-  "material-icon-theme.activeIconPack": "react",
-  "material-icon-theme.folders.theme": "classic",
-  "editor.rulers": [100],
-  "editor.wordWrap": "bounded",
-  "editor.wordWrapColumn": 100,
+  "cSpell.userWords": [],
+  "editor.accessibilitySupport": "off",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontSize": 15,
   "editor.formatOnSave": true,
   "editor.insertSpaces": true,
   "editor.minimap.enabled": false,
   "editor.multiCursorModifier": "alt",
+  "editor.rulers": [100],
   "editor.scrollBeyondLastLine": false,
   "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
-  "files.insertFinalNewline": true,
-  "files.trimTrailingWhitespace": true,
+  "editor.wordWrap": "bounded",
+  "editor.wordWrapColumn": 100,
+  "explorer.confirmDragAndDrop": false,
   "files.associations": {
     "*.snap": "javascriptreact"
   },
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
   "javascript.format.enable": false,
-  "window.zoomLevel": 1,
-  "explorer.confirmDragAndDrop": false,
   "javascript.updateImportsOnFileMove.enabled": "never",
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+  "material-icon-theme.activeIconPack": "react",
+  "material-icon-theme.folders.theme": "classic",
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
   },
-  "cSpell.userWords": ["WTTJ", "noopener", "noreferrer", "reakit", "xstyled"]
+  "workbench.colorTheme": "Atom One Dark",
+  "workbench.iconTheme": "material-icon-theme",
+  "[typescriptreact]": {},
+  "editor.indentSize": "tabSize",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "workbench.activityBar.location": "top",
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "i18n-ally.autoDetection": false,
+  "redhat.telemetry.enabled": false,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.persistentSessionScrollback": 10000,
+  "stylelint.validate": ["postcss", "css", "scss"],
+  "database-client.autoSync": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "typescript": true
+  },
+  "github.copilot.nextEditSuggestions.enabled": false,
+  "workbench.editorAssociations": {
+    "*.svg": "default"
+  },
+  "explorer.confirmPasteNative": false,
+  "docker.extension.dockerEngineAvailabilityPrompt": false,
+  "workbench.editor.empty.hint": "hidden",
+  "docker.extension.enableComposeLanguageServer": false,
+  "tailwindCSS.classFunctions": ["cva", "cx", "clsx"],
+  "workbench.startupEditor": "none",
+  "terminal.integrated.allowedLinkSchemes": [
+    "file",
+    "http",
+    "https",
+    "mailto",
+    "vscode",
+    "vscode-insiders",
+    "src/app/(tabs)/index.tsx"
+  ],
+  "chat.viewSessions.orientation": "stacked"
 }
